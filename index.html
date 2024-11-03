@@ -90,14 +90,14 @@
 
             // Listen for messages from the iframe
             window.addEventListener('message', function (event) {
-                if (event.origin !== 'https://enx.gdplayertv.to') return; // Change this to the actual origin if needed
+                if (event.origin !== 'https://enz.gdplayertv.to') return; // Change this to the actual origin if needed
                 if (event.data && event.data.type === 'prevent-open') {
                     alert('Blocked a new tab from opening.');
                 }
             });
 
             // Load the iframe
-            iframe.src = 'https://enx.gdplayertv.to/live-tv/dazn-laliga/?embed=1';
+            iframe.src = 'https://enz.gdplayertv.to/live-tv/dazn-laliga/?embed=1';
 
             // Hide the footer text after 10 seconds
             setTimeout(function () {
